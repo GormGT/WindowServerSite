@@ -86,6 +86,7 @@ main {
 }
 nav{
     background-color: #f2f2f2;
+    transition-duration: 0.1s;
 }
 .mainNav h3{
     font-family: "openSansRegular";
@@ -124,9 +125,11 @@ nav{
 .centralCollumn{
     background-color: #fff;
     padding: 20px;
+    transition-duration: 0.1s;
 }
 .blankSpace{
     background-color: #fff;
+    transition-duration: 0.1s;
 }
 
 
@@ -136,10 +139,12 @@ nav{
 .darkTheme{
     background-color: rgb(36, 36, 36);
     color: white;
+    transition-duration: 0.1s;
 }
 .darkTheme2{
     background-color: rgb(32, 32, 32);
     color: white;
+    transition-duration: 0.1s;
 }
 .darkThemeLink{
     color: rgb(169, 169, 169) !important;

@@ -281,8 +281,49 @@
                 <img class="tutImg" src="img/WinServKap7-001.png" width="500px" alt="Bilde av nettverksinstillingene">
             </div>
             <div class="tutStepContainer">
-                <p></p>
-                <img class="tutImg" src="img/WinServKap7-002.png" width="500px" alt="Bilde av ">
+                <p>Så høyreklikk på Ethernet0, og trykk på IPv4 og properties, akkurat som på serveren. Skriv inn følgende:</p>
+                <p class="lightCode"></p>
+                <img class="tutImg" src="img/WinServKap7-002.png" width="500px" alt="Bilde av IP-konfigureringsskjermen på klientmaskinen">
+            </div>
+            <div class="tutStepContainer">
+                <p>Etter det gå tilbake til settings, system og velg About nederst. Deretter velg "System Info" under Related settings og trykk "Change settings" på computer name.</p>
+                <img class="tutImg" src="img/WinServKap7-005.png" width="500px" alt="Bilde av menyen der man får oversikt over diverse systeminfo">
+            </div>
+            <div class="tutStepContainer">
+                <p>I menyen som kommer opp, trykk "change" nederst og så skriver man inn domenenavnet som ble definert i kapittel 4.</p>
+                <img class="tutImg" src="img/WinServKap7-008.png" width="400px" alt="Bilde av menyen der man skriver inn serverens domene">
+            </div>
+            <div class="tutStepContainer">
+                <p>Hvis alt fungerer som det skal, vil man få opp et felt for innlogging. Her skal man logge inn på adminbrukeren til serveren.</p>
+                <img class="tutImg" src="img/WinServKap7-009.png" width="500px" alt="Bilde av innloggingsfelt for serverens adminbruker">
+            </div>
+            <div class="tutStepContainer">
+                <p>Til slutt vil man få en melding som sier velkommen til domenet, og nettverksmenyen nederst vil vise domenenavnet til serveren. Serveren og klientmaskinen er nå koblet sammen. Restart så klientmaskinen (kan hende man må gjøre dette rett etter å ha logget inn også).</p>
+                <img class="tutImg" src="img/WinServKap7-007.png" width="500px" alt="Bilde av serverens domene i nettverksmenyen">
+            </div>
+            
+            <hr>
+
+            <h1 id="kapittel8">Kapittel 8: Sette opp IIS (Internet Information Services)</h1>
+            <div class="tutStepContainer">
+                <p>Gå tilbake til "Add roles and features", og denne gangen hak av på "Web server (IIS)" og FTP.</p>
+                <img class="tutImg" src="img/WinServKap8-001.png" width="400px" alt="Bilde av menyen der Web server blir valgt">
+            </div>
+            <div class="tutStepContainer">
+                <p>Før man trykker "Add features", huk av på "request filtering" og "basic authentication". Fortsett så gjennom prosessen som vanlig helt til det er installert.</p>
+                <img class="tutImg" src="img/WinServKap8-002.png" width="400px" alt="Bilde av menyen der request filtering og basic authentication blir valgt">
+            </div>
+            <div class="tutStepContainer">
+                <p>Hvis man så går inn på nettleseren sin, kan man skrive inn IP-adressen til serveren og man vil få opp startsiden for IIS. Dette betyr at IIS fungerer som det skal.</p>
+                <img class="tutImg" src="img/WinServKap8-004.png" width="500px" alt="Bilde av startsiden til webserveren, sett på webserverens nettleser">
+            </div>
+            <div class="tutStepContainer">
+                <p>Etter å ha sjekket at IIS fungerer, åpne søkefeltet på serveren og søk opp IIS manager.</p>
+                <img class="tutImg" src="img/WinServKap8-009.png" width="500px" alt="Bilde av IIS manager i søkefeltet">
+            </div>
+            <div class="tutStepContainer">
+                <p>Inne i IIS manager, gå inn på mappen med navnet til administrator-brukeren, så inn i mappen sites og høyreklikk på "default web site". </p>
+                <img class="tutImg" src="img/WinServKap8-010.png" width="400px" alt="Bilde av ">
             </div>
         </div>
         <div class="blankSpace mainPageElement"></div>

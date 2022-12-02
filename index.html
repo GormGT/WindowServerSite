@@ -34,16 +34,16 @@
                     <a class="navLink" href="#kapittel2">Kapittel 2: Sette opp Windows server</a>
                 </li>
                 <li>
-                    <a class="navLink" href="#kapittel3">Kapittel 3: Lage og sette opp klientmaskin</a>
+                    <a class="navLink" href="#kapittel3">Kapittel 3: Sette opp servere og brukere</a>
                 </li>
                 <li>
-                    <a class="navLink" href="#kapittel4">Kapittel 4: Sette opp server og brukere</a>
+                    <a class="navLink" href="#kapittel4">Kapittel 4: Sette opp Active Directory Domain Services (AD DS)</a>
                 </li>
                 <li>
-                    <a class="navLink" href="#kapittel5">Kapittel 5: Sette opp Active Directory Domain Services (AD DS)</a>
+                    <a class="navLink" href="#kapittel5">Kapittel 5: Sette opp DHCP</a>
                 </li>
                 <li>
-                    <a class="navLink" href="#kapittel6">Kapittel 6: Sette opp DHCP</a>
+                    <a class="navLink" href="#kapittel6">Kapittel 6: Lage og sette opp klientmaskin</a>
                 </li>
                 <li>
                     <a class="navLink" href="#kapittel7">Kapittel 7: Koble klientmaskinen til serveren</a>
@@ -130,21 +130,7 @@
             
             <hr>
 
-            <h1 id="kapittel3">Kapittel 3: Lage og sette opp klientmaskin</h1>
-            <div class="tutStepContainer">
-                <p>Dette er en relativ kort, men viktig del av guiden. Klientmaskinen skal brukes til å koble opp med serveren senere, og det er derfor viktig at den er satt opp riktig. Det kan osgå hende at man på lage klientmaskinen på nytt avhengig av hva som skjer.</p>
-                <br>
-                <p>Opprett en ny maskin, akkurat som i kapittel 1. Når man skal velge operativsystem, så velger man "Windows 10(64-bit)" istedenfor Windows Server.</p>
-                <img class="tutImg" src="img/WinServKap3-001.png" width="300px" alt="Bilde av dropdown-menyen der man velger Windows 10">
-            </div>
-            <div class="tutStepContainer">
-                <p>Fortsett helt fram til man velger ISO fil. Istedenfor å velge ISO filen for serveren, velger man den som heter "en_windows_10_multi". Når man har gjort det så følger man resten av guiden videre, helt fram til maskinen spør om hvilken versjon du vil installere. For denne guiden har det blitt brukt Windows 10 Pro, men Windows 10 Home burde også fungere.</p>
-                <img class="tutImg" src="img/WinServKap3-002.png" width="500px" alt="Bilde av menyen der man velger windows 10 ISO fil">
-            </div>
-            
-            <hr>
-
-            <h1 id="kapittel4">Kapittel 4: Sette opp server og brukere</h1>
+            <h1 id="kapittel3">Kapittel 3: Sette opp server og brukere</h1>
             <div class="tutStepContainer">
                 <p>Da er det på tide og begynne oppsettet for selve serveren. Aller først må man sjekke at alt er som det skal. Når serveren har nettop startet kan det hende at noen felter lengre ned på hovedmenyen er røde, men hvis man venter litt og refresher burde de fikse seg selv.</p>
                 <img class="tutImg" src="img/WinServKap4-001.png" width="600px" alt="Bilde av hovedmenyen til Windows Server">
@@ -201,7 +187,7 @@
             
             <hr>
 
-            <h1 id="kapittel5">Kapittel 5: Sette opp Active Directory Domain Services (AD DS)</h1>
+            <h1 id="kapittel4">Kapittel 4: Sette opp Active Directory Domain Services (AD DS)</h1>
             <div class="tutStepContainer">
                 <p>For å installere AD DS, gå tilbake inn på Add roles and features, og huk av på Active Directory Domain Services. Kjør så samme prosess som sist gang, der man trykker på "Add features" og trykker next helt fram til man installerer.</p>
                 <img class="tutImg" src="img/WinServKap5-001.png" width="500px" alt="Menyen der man velger AD DS">
@@ -225,15 +211,78 @@
             </div>
             <div class="tutStepContainer">
                 <p>Hvis det står "WIN" foran administrator-brukernavnet når maskinen har startet, er AD DS satt opp riktig og alt fungerer som det skal.</p>
-                <img class="tutImg" src="img/WinServKap5-012.png" width="600px" alt="Menyen der ">
+                <img class="tutImg" src="img/WinServKap5-012.png" width="600px" alt="Start-menyen som indikerer at AD DS fungerer">
             </div>
             
             <hr>
 
-            <h1 id="kapittel5">Kapittel 6: Sette opp Active Directory Domain Services (AD DS)</h1>
+            <h1 id="kapittel5">Kapittel 5: Sette opp DHCP</h1>
+            <div class="tutStepContainer">
+                <p>Igjen, gå inn på "Add roles and features" og huk av for DHCP Server. Når DHCP er installert, vil det igjen komme opp en advarselsmelding på hovedmenyen.</p>
+                <img class="tutImg" src="img/WinServKap6-001.png" width="500px" alt="Menyen der man legger til DHCP">
+            </div>
+            <div class="tutStepContainer">
+                <p>Når DHCP er installert, vil det igjen komme opp en advarselsmelding på hovedmenyen. Åpne advarselen ved å trykke på flagget, og trykk på "Complete DHCP configuration".</p>
+                <img class="tutImg" src="img/WinServKap6-002.png" width="500px" alt="Bilde av advarselen som kommer opp på hovedmenyen ">
+            </div>
+            <div class="tutStepContainer">
+                <p>Slik som på AD DS, trykk på "more" på advarselsbanneret øverst. I vinduet som kommer opp vil det være enda en advarselsmelding, der man trykker på "Complete DHCP configuration".</p>
+                <img class="tutImg" src="img/WinServKap6-004.png" width="600px" alt="Bilde av feltet der man trykker på complete DHCP configuration">
+            </div>
+            <div class="tutStepContainer">
+                <p>I menyen som kommer opp, velg "Use the following user's credentials", og skriv inn navnet til Administrator-brukeren på serveren. Etter det, trykk commit.</p>
+                <img class="tutImg" src="img/WinServKap6-005.png" width="500px" alt="Bilde av menyen der man skriver inn username">
+            </div>
+            <div class="tutStepContainer">
+                <p>Så går man tilbake til "tools" menyen, og velger DHCP fra listen. Da får man opp et vindu med oversikt over DHCP-instillingene. Velg IPv4 fra menyen til venstre, høyreklikk og velg "new scope".</p>
+                <img class="tutImg" src="img/WinServKap6-007.png" width="500px" alt="Bilde av DHCP menyen">
+            </div>
+            <div class="tutStepContainer">
+                <p>Dette vil åpne en såkalt "wizard" for å sette opp et nytt scope. Først, under scope name, skriv inn et valgfritt navn for scopet.</p>
+                <img class="tutImg" src="img/WinServKap6-009.png" width="500px" alt="Bilde av menyen der man skriver inn et scope-navn">
+            </div>
+            <div class="tutStepContainer">
+                <p>Neste steg er å definere en "range" for scopet, altså antall IP-addresser på nettverket. Skriv inn følgende:</p>
+                <p class="lightCode"></p>
+                <img class="tutImg" src="img/WinServKap6-010.png" width="500px" alt="Bilde av menyen der man skriver inn IP-range">
+            </div>
+            <div class="tutStepContainer">
+                <p>Etter det vil wizarden spørre om det er noen IP-addresser som man vil ekskludere. Dette steget hopper man over i denne guiden. Neste er Lease duration, der standard er 8 dager. Man trenger ikke endre dette, men man kan hvis man vil. Så er det configure DHCP options. Velg "Yes, I want to configure" og trykk next.</p>
+                <img class="tutImg" src="img/WinServKap6-013.png" width="500px" alt="Bilde av menyen der man bekrefter å konfigurere DHCP options">
+            </div>
+            <div class="tutStepContainer">
+                <p>I Router (default gateway) skriv inn følgende:</p>
+                <p class="lightCode"></p>
+                <p>og trykk "add". Så trykk next.</p>
+                <img class="tutImg" src="img/WinServKap6-014.png" width="500px" alt="Bilde av default gateway menyen">
+            </div>
+            <div class="tutStepContainer">
+                <p>Hvis domenet og IP-addressen til maskinen popper opp under "Domain name and DNS Servers", er alt gjort riktig. Trykk på next helt til slutten av wizarden, og trykk finish.</p>
+                <img class="tutImg" src="img/WinServKap6-015.png" width="500px" alt="Bilde av Domain name and DNS servers menyen">
+            </div>
+
+            <hr>
+
+            <h1 id="kapittel6">Kapittel 6: Lage og sette opp klientmaskin</h1>
+            <div class="tutStepContainer">
+                <p>Opprett en ny maskin, akkurat som i kapittel 1. Når man skal velge operativsystem, så velger man "Windows 10(64-bit)" istedenfor Windows Server.</p>
+                <img class="tutImg" src="img/WinServKap3-001.png" width="300px" alt="Bilde av dropdown-menyen der man velger Windows 10">
+            </div>
+            <div class="tutStepContainer">
+                <p>Fortsett helt fram til man velger ISO fil. Istedenfor å velge ISO filen for serveren, velger man den som heter "en_windows_10_multi". Når man har gjort det så følger man resten av guiden videre, helt fram til maskinen spør om hvilken versjon du vil installere. For denne guiden har det blitt brukt Windows 10 Pro, men Windows 10 Home burde også fungere.</p>
+                <img class="tutImg" src="img/WinServKap3-002.png" width="500px" alt="Bilde av menyen der man velger windows 10 ISO fil">
+            </div>
+
+            <hr>
+
+            <h1 id="kapittel7">Kapittel 7: Koble klientmaskinen til serveren</h1>
+            <div class="tutStepContainer">
+                <p>På klientmaskinen, gå inn på innstillinger, "Network & Internet", og change adapter options.</p>
+                <img class="tutImg" src="img/WinServKap7-001.png" width="500px" alt="Bilde av nettverksinstillingene">
+            </div>
             <div class="tutStepContainer">
                 <p></p>
-                <img class="tutImg" src="img/WinServKap6-001.png" width="500px" alt="Menyen der ">
+                <img class="tutImg" src="img/WinServKap7-002.png" width="500px" alt="Bilde av ">
             </div>
         </div>
         <div class="blankSpace mainPageElement"></div>

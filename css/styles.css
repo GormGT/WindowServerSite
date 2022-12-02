@@ -10,12 +10,18 @@
 :root{
     --windowsBlue: #0072C6;
 }
+html{
+    scroll-behavior:smooth
+}
 
 
 
 body{
     margin: 0px;
     background-color: var(--windowsBlue);
+}
+hr{
+    margin: 60px 5px;
 }
 h1, h2, h3, h4, h5, h6, p, a{
     font-family: "openSansLight";
@@ -133,6 +139,11 @@ nav{
 }
 
 
+
+/*Styles for parts of the main guide*/
+div.tutStepContainer{
+    padding: 30px 20px;
+}
 
 
 /*Misc. styles*/

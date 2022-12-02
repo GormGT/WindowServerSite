@@ -113,7 +113,7 @@ nav{
     transition-duration: 0.1s;
 }
 .mainNav li:hover{
-    transform: scale(1.3);
+    transform: scale(1.09);
     transition-duration: 0.1s;
 }
 .mainNav a{

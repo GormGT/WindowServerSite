@@ -17,8 +17,8 @@
         <div class="blueBanner">
             <div></div>
             <h2>Her kan du lære å lage din egen nettside, akkurat som denne.</h2>    
-            <div class="lightBulb" onclick="changeTheme()">
-                <img src="img/lightbulb-regular.svg" width="40px">
+            <div class="lightBulb">
+                <img src="img/lightbulb-regular.svg" width="40px" onclick="changeTheme()">
                 <p>Mørkt tema</p>
             </div>
         </div>
@@ -125,7 +125,7 @@
             </div>
             <div class="tutStepContainer">
                 <p>Når det er gjort er serveren klar til å brukes.</p>
-                <img class="tutImg" src="img/WinServKap2-010.png" width="500px" alt="Bilde av start-menyen til Windows Server">
+                <img class="tutImg" src="img/WinServKap2-010.png" width="500px" alt="Bilde av låseskjermen til Windows Server">
             </div>
             
             <hr>
@@ -135,16 +135,73 @@
                 <p>Dette er en relativ kort, men viktig del av guiden. Klientmaskinen skal brukes til å koble opp med serveren senere, og det er derfor viktig at den er satt opp riktig. Det kan osgå hende at man på lage klientmaskinen på nytt avhengig av hva som skjer.</p>
                 <br>
                 <p>Opprett en ny maskin, akkurat som i kapittel 1. Når man skal velge operativsystem, så velger man "Windows 10(64-bit)" istedenfor Windows Server.</p>
-                <img class="tutImg" src="img/WinServKap3-001.png" width="300px" alt="Bilde av start-menyen til Windows Server">
+                <img class="tutImg" src="img/WinServKap3-001.png" width="300px" alt="Bilde av dropdown-menyen der man velger Windows 10">
             </div>
             <div class="tutStepContainer">
                 <p>Fortsett helt fram til man velger ISO fil. Istedenfor å velge ISO filen for serveren, velger man den som heter "en_windows_10_multi". Når man har gjort det så følger man resten av guiden videre, helt fram til maskinen spør om hvilken versjon du vil installere. For denne guiden har det blitt brukt Windows 10 Pro, men Windows 10 Home burde også fungere.</p>
-                <img class="tutImg" src="img/WinServKap3-002.png" width="500px" alt="Bilde av start-menyen til Windows Server">
+                <img class="tutImg" src="img/WinServKap3-002.png" width="500px" alt="Bilde av menyen der man velger windows 10 ISO fil">
             </div>
             
             <hr>
 
             <h1 id="kapittel4">Kapittel 4: Sette opp server og brukere</h1>
+            <div class="tutStepContainer">
+                <p>Da er det på tide og begynne oppsettet for selve serveren. Aller først må man sjekke at alt er som det skal. Når serveren har nettop startet kan det hende at noen felter lengre ned på hovedmenyen er røde, men hvis man venter litt og refresher burde de fikse seg selv.</p>
+                <img class="tutImg" src="img/WinServKap4-001.png" width="600px" alt="Bilde av hovedmenyen til Windows Server">
+            </div>
+            <div class="tutStepContainer">
+                <p>Når alt er klart på hovedmenyen går man til "Tools" øverst til høyre og finner fram til "Computer Management" på listen.</p>
+                <img class="tutImg" src="img/WinServKap4-003.png" width="500px" alt="Bilde av dropdown-menyen der man velger computer management">
+            </div>
+            <div class="tutStepContainer">
+                <p>Inne på computer management gå til "Local Users and Groups", gå inn i "Users" mappen, høyreklikk og velg "New User".</p>
+                <img class="tutImg" src="img/WinServKap4-005.png" width="500px" alt="Bilde av Users mappen i computer management">
+            </div>
+            <div class="tutStepContainer">
+                <p>For å opprette en ny bruker må man skrive inn et brukernavn, et "fullt navn", og et passord. Dette vil bli en klientbruker som man kan logge på maskinen med senere.</p>
+                <img class="tutImg" src="img/WinServKap4-007.png" width="400px" alt="Bilde av menyen man bruker for å opprette en ny bruker">
+            </div>
+            <div class="tutStepContainer">
+                <p>Høyreklikk så på brukeren du nettop har opprettet og velg "properties", "member of", og man får opp en enkel meny med en tekstboks nederst. Ikke fjern innholdet i tekstboksen, men skriv inn "Administrators" på slutten. Hvis det da kommer en understrek under teksten etter å ha trykket "check names", er verdien gyldig og man kan trykke på "ok" og "apply".</p>
+                <img class="tutImg" src="img/WinServKap4-009.png" width="500px" alt="Bilde av menyen der man skriver inn gjør brukeren til en administrator">
+            </div>
+            <div class="tutStepContainer">
+                <p>Når det er gjort, høyreklikk på Administrator-brukeren, velg "rename" og gi den et valgfritt navn. Etter det går man ut av "computer management" menyen og går til local server, der man trykker på "computer name".</p>
+                <img class="tutImg" src="img/WinServKap4-012.png" width="600px" alt="Bilde av local server menyen der man trykker på computer name">
+            </div>
+            <div class="tutStepContainer">
+                <p>I menyen som kommer opp, skriv inn et valgfritt navn under "computer name". Etter det, trykk på "more" og skriv inn en valgfri "DNS suffix" for serveren. Når man trykker ok vil maskinen fortelle at man må restarte, så før man går videre så restarter man serveren.</p>
+                <img class="tutImg" src="img/WinServKap4-014.png" width="500px" alt="Bilde av menyen der man skriver inn DNS suffix">
+            </div>
+            <div class="tutStepContainer">
+                <p>Etter å ha restartet er det på tide å koble til internett. Gå tilbake til Local Server og velg "Ethernet0".</p>
+                <img class="tutImg" src="img/WinServKap4-017.png" width="600px" alt="Bilde av local server menyen">
+            </div>
+            <div class="tutStepContainer">
+                <p>Fra listen som kommer opp, velg "Internet Protocol Version 4(TCP/IPv4)" og trykk på properties.</p>
+                <img class="tutImg" src="img/WinServKap4-018.png" width="400px" alt="Bilde av menyen der men går inn på properties til IPv4">
+            </div>
+            <div class="tutStepContainer">
+                <p>Da vil man få opp denne menyen. Her skal man manuelt skrive inn IP-addresse, subnett-maske, default gateway og DNS server:</p>
+                <p class="lightCode"></p>
+                <img class="tutImg" src="img/WinServKap4-020.png" width="400px" alt="Bilde av menyen der man skriver inn IPv4 informasjon">
+            </div>
+            <div class="tutStepContainer">
+                <p>Når man trykker ok vil man få en melding om at man er koblet til internett, og på local server vil man se IP-adressen til serveren under Ethernet0.</p>
+                <img class="tutImg" src="img/WinServKap4-022.png" width="500px" alt="Bilde av IP-en til maskinen i local server menyen">
+            </div>
+            <div class="tutStepContainer">
+                <p>Gå inn på Dashboard, "Add roles and features" og trykk next helt fram til "server roles", der man huker av for DNS Server.</p>
+                <img class="tutImg" src="img/WinServKap4-024.png" width="500px" alt="Menyen der man velger DNS server">
+            </div>
+            <div class="tutStepContainer">
+                <p>Etter å ha huket av på DNS server vil det poppe opp et vindu som beskriver det du er i ferd med å installere. Trykk på "Add features" og trykk på next helt fram til "Confirmation" vinduet, der man trykker på Install. Serveren vil bruke opptil noen minutter på å installere, og når den er ferdig, kan man gå til kapittel 5.</p>
+                <img class="tutImg" src="img/WinServKap4-028.png" width="500px" alt="Menyen der man velger DNS server">
+            </div>
+            
+            <hr>
+
+            <h1 id="kapittel5">Kapittel 5: Sette opp Active Directory Domain Services (AD DS)</h1>
         </div>
         <div class="blankSpace mainPageElement"></div>
     </main>

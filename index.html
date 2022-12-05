@@ -201,7 +201,8 @@
             </div>
             <div class="tutStepContainer">
                 <p>Da vil man få opp denne menyen. Her skal man manuelt skrive inn IP-addresse, subnett-maske, default gateway og DNS server:</p>
-                <p class="lightCode"></p>
+                <p class="lightCode">IP address: 10.12.elevpool-nummer.72<br>Subnet mask: 255.255.255.0<br>Default gateway: 10.12.elevpool-nummer.1<br>DNS server: 10.10.1.30</p>
+                <br>
                 <img class="tutImg" src="img/WinServKap4-020.png" style="width: 400px" alt="Bilde av menyen der man skriver inn IPv4 informasjon">
             </div>
             <div class="tutStepContainer">
@@ -230,7 +231,8 @@
             </div>
             <div class="tutStepContainer">
                 <p>I menyen som kommer opp, vil man kunne se enda en advarselsmelding i den øverste boksen. Trykk på "Promote this server to a domain" og man får opp et vindu der man skal sette opp domenet. Først, velg "Add a new forest" og under Root domain name, skriv inn et valgfritt domenenavn med følgende format:</p>
-                <p class="lightCode"></p>
+                <p class="lightCode">prefix.domenenavn.net</p>
+                <br>
                 <img class="tutImg" src="img/WinServKap5-008.png" style="width: 600px" alt="Menyen der man skriver inn domenenavn">
             </div>
             <div class="tutStepContainer">
@@ -275,7 +277,8 @@
             </div>
             <div class="tutStepContainer">
                 <p>Neste steg er å definere en "range" for scopet, altså antall IP-addresser på nettverket. Skriv inn følgende:</p>
-                <p class="lightCode"></p>
+                <p class="lightCode">Start IP address: 10.12.elevpool-nummer.2<br>End IP address: 10.12.elevpool-nummer.254<br>Length: 24<br>Subnet mask: 255.255.255.0</p>
+                <br>
                 <img class="tutImg" src="img/WinServKap6-010.png" style="width: 500px" alt="Bilde av menyen der man skriver inn IP-range">
             </div>
             <div class="tutStepContainer">
@@ -284,7 +287,8 @@
             </div>
             <div class="tutStepContainer">
                 <p>I Router (default gateway) skriv inn følgende:</p>
-                <p class="lightCode"></p>
+                <p class="lightCode">10.12.elevpool-nummer.1</p>
+                <br>
                 <p>og trykk "add". Så trykk next.</p>
                 <img class="tutImg" src="img/WinServKap6-014.png" style="width: 500px" alt="Bilde av default gateway menyen">
             </div>
@@ -314,7 +318,8 @@
             </div>
             <div class="tutStepContainer">
                 <p>Så høyreklikk på Ethernet0, og trykk på IPv4 og properties, akkurat som på serveren. Skriv inn følgende:</p>
-                <p class="lightCode"></p>
+                <p class="lightCode">IP address: 10.12.elevpool-nummer.73<br>Subnet mask: 255.255.255.0<br>Default gateway: 10.12.elevpool-nummer.1<br>DNS server: 10.10.1.30</p>
+                <br>
                 <img class="tutImg" src="img/WinServKap7-002.png" style="width: 500px" alt="Bilde av IP-konfigureringsskjermen på klientmaskinen">
             </div>
             <div class="tutStepContainer">
@@ -370,7 +375,7 @@
                 <img class="tutImg" src="img/placeholder.jpg" style="width: 400px" alt="Bytt ut dette bildet med en video">
             </div>
             <div class="tutStepContainer">
-                <p>Til å begynne med må man installere et program som heter FileZilla. Det er et program som gjør overføring av filer gjenomm FTP mye enklere. Gå til <a href="https://filezilla-project.org/">FileZilla sin nettside</a> og velg "Download FileZilla Client". Etter å ha fullført installasjons-wizarden, gå inn på FileZilla og trykk på "connect" øverst til venstre. Man vil da få opp tjeneroppsett-vinduet, hvor man legger til serveren. Velg "FTP" under protokoll, skriv inn IP-en og porten til serveren, og velg anonym innloggingstype.</p>
+                <p>Til å begynne med må man installere et program som heter FileZilla. Det er et program som gjør overføring av filer gjenomm FTP mye enklere. Gå til <a target="_blank" href="https://filezilla-project.org/">FileZilla sin nettside</a> og velg "Download FileZilla Client". Etter å ha fullført installasjons-wizarden, gå inn på FileZilla og trykk på "connect" øverst til venstre. Man vil da få opp tjeneroppsett-vinduet, hvor man legger til serveren. Velg "FTP" under protokoll, skriv inn IP-en og porten til serveren, og velg anonym innloggingstype.</p>
                 <img class="tutImg" src="img/WinServKap9-001.png" style="width: 600px" alt="Bilde av menyen der man legger til en ny server på FileZilla">
             </div>
             <div class="tutStepContainer">
@@ -382,7 +387,7 @@
     </main>
 
     <footer>
-        <p>Some more text</p>
+        <a href="https://github.com/GormGT" target="_blank">GitHub</a>
     </footer>
 
     <script src="js/index.js"></script>

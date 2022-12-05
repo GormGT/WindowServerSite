@@ -1,8 +1,10 @@
 const mainPage = document.querySelectorAll(".mainPageElement");
-const mainNav = document.querySelector(".mainNav");
+const mainNav = document.querySelectorAll(".mainNav");
 const mainNavLinks = document.querySelectorAll(".navLink");
 const lightBulbText = document.querySelector(".lightBulb p");
 const tutImgs = document.querySelectorAll("img.tutImg");
+const tutLinks = document.querySelectorAll("div.tutStepContainer a");
+const lightCode = document.querySelectorAll("p.lightCode");
 
 for(i = 0; tutImgs.length > i; i++){
     //console.log(tutImgs[i].width);
@@ -24,8 +26,16 @@ function changeTheme(){
     mainNavLinks.forEach((element) => {
         element.classList.toggle("darkThemeLink");
     })
-    mainNav.classList.toggle("darkTheme2");
-    if (mainNav.classList.contains("darkTheme2")){
+    mainNav.forEach((element) => {
+        element.classList.toggle("darkTheme2");
+    })
+    tutLinks.forEach((element) => {
+        element.classList.toggle("darkThemeLink2");
+    })
+    lightCode.forEach((element) => {
+        element.classList.toggle("darkBack");
+    })
+    if (mainNav[0, 1].classList.contains("darkTheme2")){
         lightBulbText.innerText = "Lyst tema";
     }else{lightBulbText.innerText = "Mørkt tema";}
 }

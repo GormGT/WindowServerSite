@@ -15,16 +15,48 @@
             <h1>Velkommen!</h1>
         </div>
         <div class="blueBanner">
-            <div></div>
-            <h2>Her kan du lære å lage din egen nettside, akkurat som denne.</h2>    
+            <div class="blueBannerBlankSpace"></div>
+            <h2>Her kan du lære å lage, sette opp og hoste en nettside på en virtuell Windows Server.</h2>    
             <div class="lightBulb">
                 <img src="img/lightbulb-regular.svg" width="40px" onclick="changeTheme()">
                 <p>Mørkt tema</p>
             </div>
         </div>
     </header>
+    <nav class="mainNav smallScreen">
+        <h3>Hurtignavigering:</h3>
+        <ul>
+            <li>
+                <a class="navLink" href="#kapittel1">Kapittel 1: Opprette en virtuell maskin</a>
+            </li>
+            <li>
+                <a class="navLink" href="#kapittel2">Kapittel 2: Sette opp Windows server</a>
+            </li>
+            <li>
+                <a class="navLink" href="#kapittel3">Kapittel 3: Sette opp servere og brukere</a>
+            </li>
+            <li>
+                <a class="navLink" href="#kapittel4">Kapittel 4: Sette opp Active Directory Domain Services (AD DS)</a>
+            </li>
+            <li>
+                <a class="navLink" href="#kapittel5">Kapittel 5: Sette opp DHCP</a>
+            </li>
+            <li>
+                <a class="navLink" href="#kapittel6">Kapittel 6: Lage og sette opp klientmaskin</a>
+            </li>
+            <li>
+                <a class="navLink" href="#kapittel7">Kapittel 7: Koble klientmaskinen til serveren</a>
+            </li>
+            <li>
+                <a class="navLink" href="#kapittel8">Kapittel 8: Sette opp IIS (Internet Information Services)</a>
+            </li>
+            <li>
+                <a class="navLink" href="#kapittel9">Kapittel 9: Legge inn HTML</a>
+            </li>
+        </ul>
+    </nav>
     <main>
-        <nav class="mainNav">
+        <nav class="mainNav normalScreen">
             <h3>Hurtignavigering:</h3>
             <ul>
                 <li>
@@ -101,31 +133,31 @@
             <h1 id="kapittel2">Kapittel 2: Sette opp Windows server</h1>
             <div class="tutStepContainer">
                 <p>Start maskinen ved å trykke på den grønne pilen øverst. Etter noen sekunder vil så "launch web console" knappen bli tilgjengelig. Trykk på den og velg "Web Console" for å komme inn på selve maskinen.</p>
-                <img class="tutImg" src="img/WinServKap2-001.png" width="500px" alt="Bilde av popup-menyen der man velger web console">
+                <img class="tutImg" src="img/WinServKap2-001.png" style="width: 500px" alt="Bilde av popup-menyen der man velger web console">
             </div>
             <div class="tutStepContainer">
                 <p>Hvis man har gjort alt i kapittel 1 riktig vil man komme inn på "Boot manager" når man åpner webkonsollen. Velg "EFI WMware Virtual SATA CDROM Drive" for å starte installasjonsprosessen.</p>
-                <img class="tutImg" src="img/WinServKap2-002.png" width="500px" alt="Bilde av boot manager menyen">
+                <img class="tutImg" src="img/WinServKap2-002.png" style="width: 500px" alt="Bilde av boot manager menyen">
             </div>
             <div class="tutStepContainer">
                 <p>Etter litt venting vil man få denne menyen, der man velger språkinstillingene for serveren. Her velger man det som er relevant for sin egen datamaskin.</p>
-                <img class="tutImg" src="img/WinServKap2-003.png" width="500px" alt="Bilde av menyen der man velger språkinstillinger">
+                <img class="tutImg" src="img/WinServKap2-003.png" style="width: 500px" alt="Bilde av menyen der man velger språkinstillinger">
             </div>
             <div class="tutStepContainer">
                 <p>Maskinen vil så spørre om en product key. Med mindre man faktisk har kjøpt en slik nøkkel (noe man ikke burde for virtuelle maskiner), så velger man bare "I don't have a produkt key". Etter det skal man velge versjonen av Windows server man vil installere. I denne guiden velger man "2019 Datacenter Desktop Experience", men hvis du er godt kjent med Windows server og liker å jobbe med en konsoll, kan man velge vanlig datacenter.</p>
-                <img class="tutImg" src="img/WinServKap2-005.png" width="500px" alt="Bilde av menyen der man velger windows versjon">
+                <img class="tutImg" src="img/WinServKap2-005.png" style="width: 500px" alt="Bilde av menyen der man velger windows versjon">
             </div>
             <div class="tutStepContainer">
                 <p>Så kommer noen lagringsrelaterte valg. Først vil maskinen spørre om man enten vil oppgradere versjonen man allerede har, eller om man vil gå for en custom install. Den førstnevnte instillingen er bare tilgjengelig hvis du allerede har en versjon av Windows installert på maskinen, som ikke er tilfellet her. Velg "Custom Install" og gå videre til hvor man vil installere windows, og her vil det bare være en enkelt plass å lagre maskinen på. Når man har gjort alt dette vil maskinen begynne å faktisk installere Windows, og dette kan ta en del tid.</p>
-                <img class="tutImg" src="img/WinServKap2-008.png" width="400px" alt="Bilde av listen man ser mens Windows installeres">
+                <img class="tutImg" src="img/WinServKap2-008.png" style="width: 400px" alt="Bilde av listen man ser mens Windows installeres">
             </div>
             <div class="tutStepContainer">
                 <p>Når Windows endelig har installert vil du bli spurt om å opprette et passord for administrator-brukeren. Her er det viktig at man lager et relativt sterkt passord, ettersom noen steg senere i guiden vil ikke la seg utføre hvis passordet er for svakt.</p>
-                <img class="tutImg" src="img/WinServKap2-009.png" width="500px" alt="Bilde av passordfeltene for administrator-brukeren">
+                <img class="tutImg" src="img/WinServKap2-009.png" style="width: 500px" alt="Bilde av passordfeltene for administrator-brukeren">
             </div>
             <div class="tutStepContainer">
                 <p>Når det er gjort er serveren klar til å brukes.</p>
-                <img class="tutImg" src="img/WinServKap2-010.png" width="500px" alt="Bilde av låseskjermen til Windows Server">
+                <img class="tutImg" src="img/WinServKap2-010.png" style="width: 500px" alt="Bilde av låseskjermen til Windows Server">
             </div>
             
             <hr>
@@ -133,56 +165,56 @@
             <h1 id="kapittel3">Kapittel 3: Sette opp server og brukere</h1>
             <div class="tutStepContainer">
                 <p>Da er det på tide og begynne oppsettet for selve serveren. Aller først må man sjekke at alt er som det skal. Når serveren har nettop startet kan det hende at noen felter lengre ned på hovedmenyen er røde, men hvis man venter litt og refresher burde de fikse seg selv.</p>
-                <img class="tutImg" src="img/WinServKap4-001.png" width="600px" alt="Bilde av hovedmenyen til Windows Server">
+                <img class="tutImg" src="img/WinServKap4-001.png" style="width: 600px" alt="Bilde av hovedmenyen til Windows Server">
             </div>
             <div class="tutStepContainer">
                 <p>Når alt er klart på hovedmenyen går man til "Tools" øverst til høyre og finner fram til "Computer Management" på listen.</p>
-                <img class="tutImg" src="img/WinServKap4-003.png" width="500px" alt="Bilde av dropdown-menyen der man velger computer management">
+                <img class="tutImg" src="img/WinServKap4-003.png" style="width: 500px" alt="Bilde av dropdown-menyen der man velger computer management">
             </div>
             <div class="tutStepContainer">
                 <p>Inne på computer management gå til "Local Users and Groups", gå inn i "Users" mappen, høyreklikk og velg "New User".</p>
-                <img class="tutImg" src="img/WinServKap4-005.png" width="500px" alt="Bilde av Users mappen i computer management">
+                <img class="tutImg" src="img/WinServKap4-005.png" style="width: 500px" alt="Bilde av Users mappen i computer management">
             </div>
             <div class="tutStepContainer">
                 <p>For å opprette en ny bruker må man skrive inn et brukernavn, et "fullt navn", og et passord. Dette vil bli en klientbruker som man kan logge på maskinen med senere.</p>
-                <img class="tutImg" src="img/WinServKap4-007.png" width="400px" alt="Bilde av menyen man bruker for å opprette en ny bruker">
+                <img class="tutImg" src="img/WinServKap4-007.png" style="width: 400px" alt="Bilde av menyen man bruker for å opprette en ny bruker">
             </div>
             <div class="tutStepContainer">
                 <p>Høyreklikk så på brukeren du nettop har opprettet og velg "properties", "member of", og man får opp en enkel meny med en tekstboks nederst. Ikke fjern innholdet i tekstboksen, men skriv inn "Administrators" på slutten. Hvis det da kommer en understrek under teksten etter å ha trykket "check names", er verdien gyldig og man kan trykke på "ok" og "apply".</p>
-                <img class="tutImg" src="img/WinServKap4-009.png" width="500px" alt="Bilde av menyen der man skriver inn gjør brukeren til en administrator">
+                <img class="tutImg" src="img/WinServKap4-009.png" style="width: 500px" alt="Bilde av menyen der man skriver inn gjør brukeren til en administrator">
             </div>
             <div class="tutStepContainer">
                 <p>Når det er gjort, høyreklikk på Administrator-brukeren, velg "rename" og gi den et valgfritt navn. Etter det går man ut av "computer management" menyen og går til local server, der man trykker på "computer name".</p>
-                <img class="tutImg" src="img/WinServKap4-012.png" width="600px" alt="Bilde av local server menyen der man trykker på computer name">
+                <img class="tutImg" src="img/WinServKap4-012.png" style="width: 600px" alt="Bilde av local server menyen der man trykker på computer name">
             </div>
             <div class="tutStepContainer">
                 <p>I menyen som kommer opp, skriv inn et valgfritt navn under "computer name". Etter det, trykk på "more" og skriv inn en valgfri "DNS suffix" for serveren. Når man trykker ok vil maskinen fortelle at man må restarte, så før man går videre så restarter man serveren.</p>
-                <img class="tutImg" src="img/WinServKap4-014.png" width="500px" alt="Bilde av menyen der man skriver inn DNS suffix">
+                <img class="tutImg" src="img/WinServKap4-014.png" style="width: 500px" alt="Bilde av menyen der man skriver inn DNS suffix">
             </div>
             <div class="tutStepContainer">
                 <p>Etter å ha restartet er det på tide å koble til internett. Gå tilbake til Local Server og velg "Ethernet0".</p>
-                <img class="tutImg" src="img/WinServKap4-017.png" width="600px" alt="Bilde av local server menyen">
+                <img class="tutImg" src="img/WinServKap4-017.png" style="width: 600px" alt="Bilde av local server menyen">
             </div>
             <div class="tutStepContainer">
                 <p>Fra listen som kommer opp, velg "Internet Protocol Version 4(TCP/IPv4)" og trykk på properties.</p>
-                <img class="tutImg" src="img/WinServKap4-018.png" width="400px" alt="Bilde av menyen der men går inn på properties til IPv4">
+                <img class="tutImg" src="img/WinServKap4-018.png" style="width: 400px" alt="Bilde av menyen der men går inn på properties til IPv4">
             </div>
             <div class="tutStepContainer">
                 <p>Da vil man få opp denne menyen. Her skal man manuelt skrive inn IP-addresse, subnett-maske, default gateway og DNS server:</p>
                 <p class="lightCode"></p>
-                <img class="tutImg" src="img/WinServKap4-020.png" width="400px" alt="Bilde av menyen der man skriver inn IPv4 informasjon">
+                <img class="tutImg" src="img/WinServKap4-020.png" style="width: 400px" alt="Bilde av menyen der man skriver inn IPv4 informasjon">
             </div>
             <div class="tutStepContainer">
                 <p>Når man trykker ok vil man få en melding om at man er koblet til internett, og på local server vil man se IP-adressen til serveren under Ethernet0.</p>
-                <img class="tutImg" src="img/WinServKap4-022.png" width="500px" alt="Bilde av IP-en til maskinen i local server menyen">
+                <img class="tutImg" src="img/WinServKap4-022.png" style="width: 500px" alt="Bilde av IP-en til maskinen i local server menyen">
             </div>
             <div class="tutStepContainer">
                 <p>Gå inn på Dashboard, "Add roles and features" og trykk next helt fram til "server roles", der man huker av for DNS Server.</p>
-                <img class="tutImg" src="img/WinServKap4-024.png" width="500px" alt="Menyen der man velger DNS server">
+                <img class="tutImg" src="img/WinServKap4-024.png" style="width: 500px" alt="Menyen der man velger DNS server">
             </div>
             <div class="tutStepContainer">
                 <p>Etter å ha huket av på DNS server vil det poppe opp et vindu som beskriver det du er i ferd med å installere. Trykk på "Add features" og trykk på next helt fram til "Confirmation" vinduet, der man trykker på Install. Serveren vil bruke opptil noen minutter på å installere, og når den er ferdig, kan man gå til kapittel 5.</p>
-                <img class="tutImg" src="img/WinServKap4-028.png" width="500px" alt="Menyen der man velger DNS server">
+                <img class="tutImg" src="img/WinServKap4-028.png" style="width: 500px" alt="Menyen der man velger DNS server">
             </div>
             
             <hr>
@@ -190,28 +222,28 @@
             <h1 id="kapittel4">Kapittel 4: Sette opp Active Directory Domain Services (AD DS)</h1>
             <div class="tutStepContainer">
                 <p>For å installere AD DS, gå tilbake inn på Add roles and features, og huk av på Active Directory Domain Services. Kjør så samme prosess som sist gang, der man trykker på "Add features" og trykker next helt fram til man installerer.</p>
-                <img class="tutImg" src="img/WinServKap5-001.png" width="500px" alt="Menyen der man velger AD DS">
+                <img class="tutImg" src="img/WinServKap5-001.png" style="width: 500px" alt="Menyen der man velger AD DS">
             </div>
             <div class="tutStepContainer">
                 <p>Når AD DS er ferdig installert, vil man legge merke til at det er et advarselstegn på hovedmenyen. Gå til den nye AD DS-menyen til venstre, og trykk "more" på det gule advarselsbanneret øverst.</p>
-                <img class="tutImg" src="img/WinServKap5-005.png" width="600px" alt="Menyen der advarselsbanneret om AD DS vises">
+                <img class="tutImg" src="img/WinServKap5-005.png" style="width: 600px"" alt="Menyen der advarselsbanneret om AD DS vises">
             </div>
             <div class="tutStepContainer">
                 <p>I menyen som kommer opp, vil man kunne se enda en advarselsmelding i den øverste boksen. Trykk på "Promote this server to a domain" og man får opp et vindu der man skal sette opp domenet. Først, velg "Add a new forest" og under Root domain name, skriv inn et valgfritt domenenavn med følgende format:</p>
                 <p class="lightCode"></p>
-                <img class="tutImg" src="img/WinServKap5-008.png" width="600px" alt="Menyen der man skriver inn domenenavn">
+                <img class="tutImg" src="img/WinServKap5-008.png" style="width: 600px" alt="Menyen der man skriver inn domenenavn">
             </div>
             <div class="tutStepContainer">
                 <p>Så må man lage et "DSRM"-passord. Her er det viktig å ha et sterkt passord, ettersom et for svakt passord kan gjøre at maskinen hindrer deg fra å få satt alt opp.</p>
-                <img class="tutImg" src="img/WinServKap5-009.png" width="600px" alt="Menyen der man skriver inn DSRM-passord">
+                <img class="tutImg" src="img/WinServKap5-009.png" style="width: 600px" alt="Menyen der man skriver inn DSRM-passord">
             </div>
             <div class="tutStepContainer">
                 <p>Derfra trykker du "next" helt til "prerequisites check" og venter til maskinen har fått sjekket at alt er riktig. Hvis alt er riktig, trykk på install og vent til maskinen restarter.</p>
-                <img class="tutImg" src="img/WinServKap5-011.png" width="600px" alt="Menyen der maskinen sjekker om alt stemmer">
+                <img class="tutImg" src="img/WinServKap5-011.png" style="width: 600px" alt="Menyen der maskinen sjekker om alt stemmer">
             </div>
             <div class="tutStepContainer">
                 <p>Hvis det står "WIN" foran administrator-brukernavnet når maskinen har startet, er AD DS satt opp riktig og alt fungerer som det skal.</p>
-                <img class="tutImg" src="img/WinServKap5-012.png" width="600px" alt="Start-menyen som indikerer at AD DS fungerer">
+                <img class="tutImg" src="img/WinServKap5-012.png" style="width: 600px" alt="Start-menyen som indikerer at AD DS fungerer">
             </div>
             
             <hr>
@@ -219,46 +251,46 @@
             <h1 id="kapittel5">Kapittel 5: Sette opp DHCP</h1>
             <div class="tutStepContainer">
                 <p>Igjen, gå inn på "Add roles and features" og huk av for DHCP Server. Når DHCP er installert, vil det igjen komme opp en advarselsmelding på hovedmenyen.</p>
-                <img class="tutImg" src="img/WinServKap6-001.png" width="500px" alt="Menyen der man legger til DHCP">
+                <img class="tutImg" src="img/WinServKap6-001.png" style="width: 500px" alt="Menyen der man legger til DHCP">
             </div>
             <div class="tutStepContainer">
                 <p>Når DHCP er installert, vil det igjen komme opp en advarselsmelding på hovedmenyen. Åpne advarselen ved å trykke på flagget, og trykk på "Complete DHCP configuration".</p>
-                <img class="tutImg" src="img/WinServKap6-002.png" width="500px" alt="Bilde av advarselen som kommer opp på hovedmenyen ">
+                <img class="tutImg" src="img/WinServKap6-002.png" style="width: 500px" alt="Bilde av advarselen som kommer opp på hovedmenyen ">
             </div>
             <div class="tutStepContainer">
                 <p>Slik som på AD DS, trykk på "more" på advarselsbanneret øverst. I vinduet som kommer opp vil det være enda en advarselsmelding, der man trykker på "Complete DHCP configuration".</p>
-                <img class="tutImg" src="img/WinServKap6-004.png" width="600px" alt="Bilde av feltet der man trykker på complete DHCP configuration">
+                <img class="tutImg" src="img/WinServKap6-004.png" style="width: 600px" alt="Bilde av feltet der man trykker på complete DHCP configuration">
             </div>
             <div class="tutStepContainer">
                 <p>I menyen som kommer opp, velg "Use the following user's credentials", og skriv inn navnet til Administrator-brukeren på serveren. Etter det, trykk commit.</p>
-                <img class="tutImg" src="img/WinServKap6-005.png" width="500px" alt="Bilde av menyen der man skriver inn username">
+                <img class="tutImg" src="img/WinServKap6-005.png" style="width: 500px" alt="Bilde av menyen der man skriver inn username">
             </div>
             <div class="tutStepContainer">
                 <p>Så går man tilbake til "tools" menyen, og velger DHCP fra listen. Da får man opp et vindu med oversikt over DHCP-instillingene. Velg IPv4 fra menyen til venstre, høyreklikk og velg "new scope".</p>
-                <img class="tutImg" src="img/WinServKap6-007.png" width="500px" alt="Bilde av DHCP menyen">
+                <img class="tutImg" src="img/WinServKap6-007.png" style="width: 500px" alt="Bilde av DHCP menyen">
             </div>
             <div class="tutStepContainer">
                 <p>Dette vil åpne en såkalt "wizard" for å sette opp et nytt scope. Først, under scope name, skriv inn et valgfritt navn for scopet.</p>
-                <img class="tutImg" src="img/WinServKap6-009.png" width="500px" alt="Bilde av menyen der man skriver inn et scope-navn">
+                <img class="tutImg" src="img/WinServKap6-009.png" style="width: 500px" alt="Bilde av menyen der man skriver inn et scope-navn">
             </div>
             <div class="tutStepContainer">
                 <p>Neste steg er å definere en "range" for scopet, altså antall IP-addresser på nettverket. Skriv inn følgende:</p>
                 <p class="lightCode"></p>
-                <img class="tutImg" src="img/WinServKap6-010.png" width="500px" alt="Bilde av menyen der man skriver inn IP-range">
+                <img class="tutImg" src="img/WinServKap6-010.png" style="width: 500px" alt="Bilde av menyen der man skriver inn IP-range">
             </div>
             <div class="tutStepContainer">
                 <p>Etter det vil wizarden spørre om det er noen IP-addresser som man vil ekskludere. Dette steget hopper man over i denne guiden. Neste er Lease duration, der standard er 8 dager. Man trenger ikke endre dette, men man kan hvis man vil. Så er det configure DHCP options. Velg "Yes, I want to configure" og trykk next.</p>
-                <img class="tutImg" src="img/WinServKap6-013.png" width="500px" alt="Bilde av menyen der man bekrefter å konfigurere DHCP options">
+                <img class="tutImg" src="img/WinServKap6-013.png" style="width: 500px" alt="Bilde av menyen der man bekrefter å konfigurere DHCP options">
             </div>
             <div class="tutStepContainer">
                 <p>I Router (default gateway) skriv inn følgende:</p>
                 <p class="lightCode"></p>
                 <p>og trykk "add". Så trykk next.</p>
-                <img class="tutImg" src="img/WinServKap6-014.png" width="500px" alt="Bilde av default gateway menyen">
+                <img class="tutImg" src="img/WinServKap6-014.png" style="width: 500px" alt="Bilde av default gateway menyen">
             </div>
             <div class="tutStepContainer">
                 <p>Hvis domenet og IP-addressen til maskinen popper opp under "Domain name and DNS Servers", er alt gjort riktig. Trykk på next helt til slutten av wizarden, og trykk finish.</p>
-                <img class="tutImg" src="img/WinServKap6-015.png" width="500px" alt="Bilde av Domain name and DNS servers menyen">
+                <img class="tutImg" src="img/WinServKap6-015.png" style="width: 500px" alt="Bilde av Domain name and DNS servers menyen">
             </div>
 
             <hr>
@@ -266,11 +298,11 @@
             <h1 id="kapittel6">Kapittel 6: Lage og sette opp klientmaskin</h1>
             <div class="tutStepContainer">
                 <p>Opprett en ny maskin, akkurat som i kapittel 1. Når man skal velge operativsystem, så velger man "Windows 10(64-bit)" istedenfor Windows Server.</p>
-                <img class="tutImg" src="img/WinServKap3-001.png" width="300px" alt="Bilde av dropdown-menyen der man velger Windows 10">
+                <img class="tutImg" src="img/WinServKap3-001.png" style="width: 300px" alt="Bilde av dropdown-menyen der man velger Windows 10">
             </div>
             <div class="tutStepContainer">
                 <p>Fortsett helt fram til man velger ISO fil. Istedenfor å velge ISO filen for serveren, velger man den som heter "en_windows_10_multi". Når man har gjort det så følger man resten av guiden videre, helt fram til maskinen spør om hvilken versjon du vil installere. For denne guiden har det blitt brukt Windows 10 Pro, men Windows 10 Home burde også fungere.</p>
-                <img class="tutImg" src="img/WinServKap3-002.png" width="500px" alt="Bilde av menyen der man velger windows 10 ISO fil">
+                <img class="tutImg" src="img/WinServKap3-002.png" style="width: 500px" alt="Bilde av menyen der man velger windows 10 ISO fil">
             </div>
 
             <hr>
@@ -278,28 +310,28 @@
             <h1 id="kapittel7">Kapittel 7: Koble klientmaskinen til serveren</h1>
             <div class="tutStepContainer">
                 <p>På klientmaskinen, gå inn på innstillinger, "Network & Internet", og change adapter options.</p>
-                <img class="tutImg" src="img/WinServKap7-001.png" width="500px" alt="Bilde av nettverksinstillingene">
+                <img class="tutImg" src="img/WinServKap7-001.png" style="width: 500px" alt="Bilde av nettverksinstillingene">
             </div>
             <div class="tutStepContainer">
                 <p>Så høyreklikk på Ethernet0, og trykk på IPv4 og properties, akkurat som på serveren. Skriv inn følgende:</p>
                 <p class="lightCode"></p>
-                <img class="tutImg" src="img/WinServKap7-002.png" width="500px" alt="Bilde av IP-konfigureringsskjermen på klientmaskinen">
+                <img class="tutImg" src="img/WinServKap7-002.png" style="width: 500px" alt="Bilde av IP-konfigureringsskjermen på klientmaskinen">
             </div>
             <div class="tutStepContainer">
                 <p>Etter det gå tilbake til settings, system og velg About nederst. Deretter velg "System Info" under Related settings og trykk "Change settings" på computer name.</p>
-                <img class="tutImg" src="img/WinServKap7-005.png" width="500px" alt="Bilde av menyen der man får oversikt over diverse systeminfo">
+                <img class="tutImg" src="img/WinServKap7-005.png" style="width: 500px" alt="Bilde av menyen der man får oversikt over diverse systeminfo">
             </div>
             <div class="tutStepContainer">
                 <p>I menyen som kommer opp, trykk "change" nederst og så skriver man inn domenenavnet som ble definert i kapittel 4.</p>
-                <img class="tutImg" src="img/WinServKap7-008.png" width="400px" alt="Bilde av menyen der man skriver inn serverens domene">
+                <img class="tutImg" src="img/WinServKap7-008.png" style="width: 400px" alt="Bilde av menyen der man skriver inn serverens domene">
             </div>
             <div class="tutStepContainer">
                 <p>Hvis alt fungerer som det skal, vil man få opp et felt for innlogging. Her skal man logge inn på adminbrukeren til serveren.</p>
-                <img class="tutImg" src="img/WinServKap7-009.png" width="500px" alt="Bilde av innloggingsfelt for serverens adminbruker">
+                <img class="tutImg" src="img/WinServKap7-009.png" style="width: 500px" alt="Bilde av innloggingsfelt for serverens adminbruker">
             </div>
             <div class="tutStepContainer">
                 <p>Til slutt vil man få en melding som sier velkommen til domenet, og nettverksmenyen nederst vil vise domenenavnet til serveren. Serveren og klientmaskinen er nå koblet sammen. Restart så klientmaskinen (kan hende man må gjøre dette rett etter å ha logget inn også).</p>
-                <img class="tutImg" src="img/WinServKap7-007.png" width="500px" alt="Bilde av serverens domene i nettverksmenyen">
+                <img class="tutImg" src="img/WinServKap7-007.png" style="width: 500px" alt="Bilde av serverens domene i nettverksmenyen">
             </div>
             
             <hr>
@@ -307,27 +339,43 @@
             <h1 id="kapittel8">Kapittel 8: Sette opp IIS (Internet Information Services)</h1>
             <div class="tutStepContainer">
                 <p>Gå tilbake til "Add roles and features", og denne gangen hak av på "Web server (IIS)" og FTP.</p>
-                <img class="tutImg" src="img/WinServKap8-001.png" width="400px" alt="Bilde av menyen der Web server blir valgt">
+                <img class="tutImg" src="img/WinServKap8-001.png" style="width: 400px" alt="Bilde av menyen der Web server blir valgt">
             </div>
             <div class="tutStepContainer">
                 <p>Før man trykker "Add features", huk av på "request filtering" og "basic authentication". Fortsett så gjennom prosessen som vanlig helt til det er installert.</p>
-                <img class="tutImg" src="img/WinServKap8-002.png" width="400px" alt="Bilde av menyen der request filtering og basic authentication blir valgt">
+                <img class="tutImg" src="img/WinServKap8-002.png" style="width: 400px" alt="Bilde av menyen der request filtering og basic authentication blir valgt">
             </div>
             <div class="tutStepContainer">
                 <p>Hvis man så går inn på nettleseren sin, kan man skrive inn IP-adressen til serveren og man vil få opp startsiden for IIS. Dette betyr at IIS fungerer som det skal.</p>
-                <img class="tutImg" src="img/WinServKap8-004.png" width="500px" alt="Bilde av startsiden til webserveren, sett på webserverens nettleser">
+                <img class="tutImg" src="img/WinServKap8-004.png" style="width: 500px" alt="Bilde av startsiden til webserveren, sett på webserverens nettleser">
             </div>
             <div class="tutStepContainer">
                 <p>Etter å ha sjekket at IIS fungerer, åpne søkefeltet på serveren og søk opp IIS manager.</p>
-                <img class="tutImg" src="img/WinServKap8-009.png" width="500px" alt="Bilde av IIS manager i søkefeltet">
+                <img class="tutImg" src="img/WinServKap8-009.png" style="width: 500px" alt="Bilde av IIS manager i søkefeltet">
             </div>
             <div class="tutStepContainer">
                 <p>Inne i IIS manager, gå inn på mappen med navnet til administrator-brukeren, så inn i mappen sites, høyreklikk på "default web site" og velg "Add FTP Publishing".</p>
-                <img class="tutImg" src="img/WinServKap8-010.png" width="400px" alt="Bilde av IIS manager">
+                <img class="tutImg" src="img/WinServKap8-010.png" style="width: 400px" alt="Bilde av IIS manager">
             </div>
             <div class="tutStepContainer">
                 <p>Først må man skrive inn IP-adressen til serveren, og velge en port. Nederst velg "No SSL". Så må man sette opp for hvem som kan koble til eller ikke. Gi tilgang for både Anonymous og Basic, og la "Authorization" bli på "not selected" (Hvis det ikke funker, så prøv noen av de andre valgene). Når det er ferdig trykk finish, og restart serveren.</p>
-                <img class="tutImg" src="img/WinServKap8-012.png" width="500px" alt="Bilde av IIS manager">
+                <img class="tutImg" src="img/WinServKap8-012.png" style="width: 500px" alt="Bilde av IIS manager">
+            </div>
+            
+            <hr>
+
+            <h1 id="kapittel9">Kapittel 9: Legge inn HTML</h1>
+            <div class="tutStepContainer">
+                <p>Video som forklarer prosessen med å legge inn HTML:</p>
+                <img class="tutImg" src="img/placeholder.jpg" style="width: 400px" alt="Bytt ut dette bildet med en video">
+            </div>
+            <div class="tutStepContainer">
+                <p>Til å begynne med må man installere et program som heter FileZilla. Det er et program som gjør overføring av filer gjenomm FTP mye enklere. Gå til <a href="https://filezilla-project.org/">FileZilla sin nettside</a> og velg "Download FileZilla Client". Etter å ha fullført installasjons-wizarden, gå inn på FileZilla og trykk på "connect" øverst til venstre. Man vil da få opp tjeneroppsett-vinduet, hvor man legger til serveren. Velg "FTP" under protokoll, skriv inn IP-en og porten til serveren, og velg anonym innloggingstype.</p>
+                <img class="tutImg" src="img/WinServKap9-001.png" style="width: 600px" alt="Bilde av menyen der man legger til en ny server på FileZilla">
+            </div>
+            <div class="tutStepContainer">
+                <p>Når alt er skrevet inn trykk på "koble til" og hvis alt er gjort riktig, vil man til slutt se mappen der nettsiden til serveren er lagret. Dermed er å legge inn egen HTML så enkelt som å dra filene man vil ha på serveren inn i vinduet nederst til høyre og de vil vises på serverens nettside (husk å fjerne filene som allerede er der).</p>
+                <img class="tutImg" src="img/WinServKap9-002.png" style="width: 600px" alt="Bilde av menyen der man legger til en ny server på FileZilla">
             </div>
         </div>
         <div class="blankSpace mainPageElement"></div>

@@ -90,6 +90,10 @@ main {
     transform: scale(1.1);
     transition-duration: 0.1s;
 }
+.lightBulb img:active{
+    transform: scale(0.9);
+    transition-duration: 0.1s;
+}
 nav{
     background-color: #f2f2f2;
     transition-duration: 0.1s;
@@ -162,4 +166,80 @@ div.tutStepContainer{
 }
 .darkThemeLink:hover{
     color: white !important;
+}
+.smallScreen{
+    display: none;
+}
+
+/*Media queries for improved responsiveness*/
+@media screen and (max-width: 1050px) {
+    .normalScreen{
+        display: none;
+    }
+    .smallScreen{
+        display: block;
+    }
+    .blueBanner{
+        grid-template-columns: 1.7fr 0.1fr;
+        grid-template-areas:
+        ". .";
+    }
+    .lightBulb{
+        margin-left: 20px;
+    }
+    .blueBannerBlankSpace{
+        display: none;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ".";
+    }
+    .blankSpace{
+        display: none;
+    }
+}
+@media screen and (max-width: 840px) {
+    .blueBanner h2{
+        font-size: 25px;
+    }
+    .lightBulb img{
+        width: 30px;
+    }
+}
+@media screen and (max-width: 681px) {
+    .width600{
+        width: 500px !important;
+    }
+}
+@media screen and (max-width: 581px) {
+    .width600, .width500{
+        width: 400px !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .width600, .width500, .width400{
+        width: 300px !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .width600, .width500, .width400, .width300{
+        max-width: 100%;
+    }
+    div.tutStepContainer{
+        padding: 10px;
+    }
+    .lightBulb img{
+        width: 20px;
+    }
+    .lightBulb p{
+        font-size: 10px;
+    }
+    .blueBanner h2{
+        font-size: 20px;
+    }
 }

@@ -1,0 +1,115 @@
+/*Define extra fonts*/
+@font-face {
+    font-family: "openSansLight";
+    src: url("../fonts/Open_Sans/static/OpenSans/OpenSans-Light.ttf");
+}
+@font-face {
+    font-family: "openSansRegular";
+    src: url("../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf")
+}
+:root{
+    --windowsBlue: #0072C6;
+}
+html{
+    scroll-behavior:smooth
+}
+
+body{
+    font-family: "openSansLight";
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+
+div#topWindowBackground img{
+    width: 100%;
+}
+.imgTextCont{
+    position: relative;
+    text-align: center;
+}
+#topWindowBackground h1{
+    font-family: "openSansLight";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+}
+.blueBanner{
+    text-align: center;
+    background-color: var(--windowsBlue);
+    margin: 0px;
+    padding: 20px;
+    color: white;
+    font-family: "openSansLight";
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . .";
+      
+      
+}
+.blueBanner h2{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.result{
+    text-align: center;
+    font-size: 30px;
+}
+.resultText{
+    color: var(--windowsBlue);
+}
+
+.quizContainer{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . .";
+}
+.quiz{
+    padding: 30px;
+}
+.lead{
+    font-weight: bold;
+    font-size: 25px;
+}
+label{
+    font-size: 20px;
+}
+.questionContainer{
+    margin-bottom: 30px;
+}
+
+button{
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(226, 226, 226);
+    border: 0px solid;
+    transition-duration: 0.1s;
+}
+button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+    cursor: pointer;
+    border: 2px solid;
+    padding: 18px;
+}
+button:active{
+    transform: scale(0.9);
+    transition-duration: 0.1s;
+}
+
+/*Misc. styles*/
+.hidden{
+    display: none;
+}

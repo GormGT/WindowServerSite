@@ -1,0 +1,117 @@
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/quiz.css" rel="styleSheet">
+    <title>Windows Server Guide Quiz</title>
+</head>
+<body>
+
+    <header>
+        <div id="topWindowBackground" class="imgTextCont"">
+            <img src="../img/Windows10BackHD.png">
+            <h1>Windows server guide: Quiz</h1>
+        </div>
+        <div class="blueBanner">
+            <div class="blueBannerBlankSpace"></div>
+            <h2>Hvor mye husker du fra guiden?</h2>    
+        </div>
+    </header>
+
+    <div class="result hidden">
+        <div class="containerRes">
+            <p>Resultat: <span class="resultText">0%</span> riktig.</p>
+        </div>
+    </div>
+    
+    <div class="quiz">
+        <div class="quizContainer">
+            <div></div>
+            <form class="quiz-form">
+                <div class="questionContainer">
+                    <p class="lead">1. Hvorfor burde man velge thin provision istedenfor thick provision?</p>
+                    <div class="form-check">
+                        <input type="radio" name="q1" value="A" id="quest1A">
+                        <label class="form-check-label" for="quest1A">Thin provision belaster ikke serveren så mye</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q1" value="B" id="quest1B">
+                        <label class="form-check-label" for="quest1B">Thin provision gjør maskinen raskere</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q1" value="C" id="quest1C">
+                        <label class="form-check-label" for="quest1C">Thin provision gjør at maskinen veier mindre</label>
+                    </div>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead">2. Hvilken versjon av Windows Server er brukt i guiden?</p>
+                    <div class="form-check">
+                        <input type="radio" name="q2" value="A" id="quest2A">
+                        <label class="form-check-label" for="quest2A">Windows Server 2019 Datacenter</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q2" value="B" id="quest2B">
+                        <label class="form-check-label" for="quest2B">Windows Server 2019 Standard (Desktop Experience)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q2" value="C" id="quest2C">
+                        <label class="form-check-label" for="quest2C">Windows Server 2019 Datacenter (Desktop Experience)</label>
+                    </div>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead">3. Hvor er det man får tak i DNS, AD DS og DHCP?</p>
+                    <div class="form-check">
+                        <input type="radio" name="q3" value="A" id="quest3A">
+                        <label class="form-check-label" for="quest3A">Local Server</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q3" value="B" id="quest3B">
+                        <label class="form-check-label" for="quest3B">Computer management</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q3" value="C" id="quest3C">
+                        <label class="form-check-label" for="quest3C">Add Roles and Features</label>
+                    </div>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead">4. Hva gjør IIS?</p>
+                    <div class="form-check">
+                        <input type="radio" name="q4" value="A" id="quest4A">
+                        <label class="form-check-label" for="quest4A">Gjør at serveren kan hente informasjon fra internett</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q4" value="B" id="quest4B">
+                        <label class="form-check-label" for="quest4B">Gjør at serveren kan hoste en egen nettside</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q4" value="C" id="quest4C">
+                        <label class="form-check-label" for="quest4C">Gjør at serveren kan koble seg opp på et nettverk</label>
+                    </div>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead">5. Hvilken protokoll bruker man for å koble seg opp på serveren?</p>
+                    <div class="form-check">
+                        <input type="radio" name="q5" value="A" id="quest5A">
+                        <label class="form-check-label" for="quest5A">SSH</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q5" value="B" id="quest5B">
+                        <label class="form-check-label" for="quest5B">FTP</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="q5" value="C" id="quest5C">
+                        <label class="form-check-label" for="quest5C">TCP</label>
+                    </div>
+                </div>
+                <div class="">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <div></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

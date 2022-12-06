@@ -5,6 +5,7 @@ const lightBulbText = document.querySelector(".lightBulb p");
 const tutImgs = document.querySelectorAll("img.tutImg");
 const tutLinks = document.querySelectorAll("div.tutStepContainer a");
 const lightCode = document.querySelectorAll("p.lightCode");
+const button = document.querySelector("button");
 
 for(i = 0; tutImgs.length > i; i++){
     //console.log(tutImgs[i].width);
@@ -35,6 +36,7 @@ function changeTheme(){
     lightCode.forEach((element) => {
         element.classList.toggle("darkBack");
     })
+    button.classList.toggle("darkTheme2")
     if (mainNav[0, 1].classList.contains("darkTheme2")){
         lightBulbText.innerText = "Lyst tema";
     }else{lightBulbText.innerText = "Mørkt tema";}

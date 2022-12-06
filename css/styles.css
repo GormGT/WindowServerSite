@@ -215,6 +215,24 @@ div.tutStepContainer a:hover{
 .darkBack{
     background-color: #000000;
 }
+button{
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(226, 226, 226);
+    border: 0px solid;
+    transition-duration: 0.1s;
+}
+button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+    cursor: pointer;
+    border: 2px solid;
+    padding: 18px;
+}
+button:active{
+    transform: scale(0.9);
+    transition-duration: 0.1s;
+}
 
 /*Media queries for improved responsiveness*/
 @media screen and (max-width: 1050px) {

@@ -149,16 +149,18 @@ footer{
     grid-auto-flow: row;
     grid-template-areas:
       ". . .";
+    background-color: var(--windowsBlue);
+    padding: 20px;
 }
 footer a{
     color: white;
     padding: 20px;
-    transition-duration: 0.1s;
+    transition-duration: 0.5s;
     display: block;
 }
 footer a:hover{
     color: rgb(112, 112, 112);
-    transition-duration: 0.1s;
+    transition-duration: 0.5s;
 }
 
 
@@ -175,6 +177,16 @@ div.tutStepContainer a:hover{
     color: #0072C6;
     transition-duration: 0.1s;
     transform: scale(2);
+}
+.backtoTop{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.backtoTop:hover{
+    color: #0072C6;
+    text-decoration: underline;
 }
 
 
@@ -221,13 +233,14 @@ button{
     background-color: rgb(226, 226, 226);
     border: 0px solid;
     transition-duration: 0.1s;
+    box-sizing: border-box;
 }
 button:hover{
     transform: scale(1.1);
     transition-duration: 0.1s;
     cursor: pointer;
     border: 2px solid;
-    padding: 18px;
+    margin: -2px;
 }
 button:active{
     transform: scale(0.9);

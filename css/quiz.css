@@ -113,3 +113,28 @@ button:active{
 .hidden{
     display: none;
 }
+
+
+@media screen and (max-width: 460px) {
+    .bluebanner h2{
+        font-size: 20px;
+    }
+    #topWindowBackground h1{
+        font-size: 20px;
+    }
+    .lead {
+        font-size: 20px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .quizContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ".";
+    }
+}

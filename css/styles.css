@@ -278,6 +278,9 @@ button:active{
     .width600{
         width: 500px !important;
     }
+    video{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 581px) {
     .width600, .width500{

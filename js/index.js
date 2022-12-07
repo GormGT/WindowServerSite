@@ -6,6 +6,7 @@ const tutImgs = document.querySelectorAll("img.tutImg");
 const tutLinks = document.querySelectorAll("div.tutStepContainer a");
 const lightCode = document.querySelectorAll("p.lightCode");
 const button = document.querySelector("button");
+const backToTop = document.querySelector(".backtoTop");
 
 for(i = 0; tutImgs.length > i; i++){
     //console.log(tutImgs[i].width);
@@ -37,6 +38,7 @@ function changeTheme(){
         element.classList.toggle("darkBack");
     })
     button.classList.toggle("darkTheme2")
+    backToTop.classList.toggle("darkThemeLink2");
     if (mainNav[0, 1].classList.contains("darkTheme2")){
         lightBulbText.innerText = "Lyst tema";
     }else{lightBulbText.innerText = "Mørkt tema";}
